@@ -1,0 +1,1078 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to Interaction Design: Lecture - Human AI Interaction</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+		<meta name="description" content="Creating beautiful interactive and engaging interfaces">
+		<meta name="author" content="Ben Kenwright">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/reveal.css">
+		<link rel="stylesheet" href="./css/theme/white.css" id="theme">
+		
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="./lib/css/monokai.css">
+		
+		<link rel="stylesheet" href="./css/reveal-override.css"/>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+							
+		<div class="reveal">
+		
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+		
+				<section>
+					<h2>Human AI Interaction</h2>
+					<h4>F27ID Introduction to Interactive Design</h4>
+					<p>
+						<small>2020-2021</small>
+					</p>
+				</section>
+				
+				<section data-markdown style="text-align: left;">
+					<textarea data-template>
+						## Overview
+
+						* What is the **Human AI Interaction**?
+						* Why is the Human AI Interaction so important?
+						* Ways of representing and visualizing Human AI Interaction
+						* Tools/Guidelines
+						* Questions and Discussion
+						
+					</textarea>
+				</section>
+
+				
+
+<!--
+*****************
+--->
+
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						Which statements about User Experience (UX) are true? (You can pick more than one)
+
+
+						
+						* a) UX is easily quantifiable
+						* b) UX is highly subjective
+						* c) UX is more important than Usability
+						* d) UX and Usability are completely independent
+						* e) For some products UX is irrelevant
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* b) UX is highly subjective
+						* e) For some products UX is irrelevant
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+
+<!--
+ 
+<section data-markdown> 
+<textarea data-template>
+
+<img src='.\images\lec10Slide2-3.png' 
+ style = '
+   border:0;
+   width:828px;
+   height:auto;
+' >
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+
+<img src='.\images\lec10Slide3-3.png' 
+ style = '
+   border:0;
+   width:828px;
+   height:auto;
+' >
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+-->
+
+
+
+
+<section data-markdown> 
+<textarea data-template>
+### Human Artificial Intelligence (AI) Interaction 
+ 
+<img src='.\images\s10-1.png' 
+ style = '
+   border:0;
+   box-shadow:none;
+   width:150%;
+   height:auto;
+' >
+
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+
+ 
+<section data-markdown> 
+<textarea data-template>
+### Human-AI Interaction in the light of Design  (Principles)
+  * Intelligent user interfaces can **violate** number of **design principles** or usability guidelines
+    - Such as consistency and feedback.
+  * **Consistency** refers to minimizing unexpected changes with a consistent interface appearance and predictable behavior,
+    - However AI systems tend to be inconsistent due to poorly understood probabilistic behaviors
+  * **Feedback** refers to providing user with information about the results of an action,
+    - However Intelligent user interfaces can react differently due to sensor noise or lighting effects.
+    - E.g. auto-completing systems suggesting different words after language model updates, search-engine returning different results due to personalization. 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Explainable AI 
+  * **How to avoid these problems, or address these challenges?**
+  
+---
+  
+  * AI explanations and interpretability to support human verification of AI actions
+  * Goals include reducing the chances of potentially dangerous actions and costly outcomes
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+<section>
+
+<section data-markdown> 
+<textarea data-template>
+##  Examples of Human-AI Interaction
+  * **Emails**
+    - Spam Filters
+  * **Social Networking**
+    - Facebook also uses AI to personalize your news-feeds and ensure you're seeing posts that interest you,
+  * **Banking/Personal Finance**
+    - uses AI and ML to decipher and convert handwriting on checks into text via OCR.
+ 
+  * **Grading and Assessment**
+    - Plagiarism Check (Turnitin)
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+##### **Examples** of Explainable AI
+## ORCA Hub Project
+  * Deploying robots on the oil rigs
+    * Provide information about robot's actions
+    * Improve situation awareness
+    * Improve human  factors - such as reduce mental load or effort, enhance performance & Trust
+
+<img src='.\images\lec10Slide7-4.png' 
+ style = '
+   border:0;
+   width:35%;
+   height:auto;
+' >
+<img src='.\images\lec10Slide7-5.png' 
+ style = '
+   border:0;
+   width:20%;
+   height:auto;
+' >
+<!--
+<img src='.\images\lec10Slide7-8.png' 
+ style = '
+   border:0;
+   width:532px;
+   height:auto;
+' >
+<img src='.\images\lec10Slide7-9.png' 
+ style = '
+   border:0;
+   width:115.1991px;
+   height:auto;
+' >
+-->
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+
+<!--
+<img src='.\images\lec10Slide8-2.png' 
+ style = '
+   border:0;
+   width:960px;
+   height:auto;
+' >
+-->
+##### **Examples** of Explainable AI
+
+## Glimpse into the future 
+
+  <img src='.\images\lec10Slide8-5.png' 
+ style = '
+   border:0;
+   width:38%;
+   height:auto;
+' >
+<img src='.\images\lec10Slide8-7.png' 
+ style = '
+   border:0;
+   width:30%;
+   height:auto;
+' >
+  * Self driving cars
+  * Social Robots
+  * Human AI Interaction (Common Place)
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+</section>
+
+
+
+<section data-markdown> 
+<textarea data-template>
+
+## What **Factors** should we consider when interacting with **Intelligent** Systems?
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+#### Humans' Interacting with **"Intelligent"** Systems
+## Factors
+  * Safety
+  * Fairness
+  * Interpretable / Transparent 
+  * Trustworthy
+  * Engaging 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Research areas 
+Research **needed** to explore 
+ * (1) **What** the desired properties are and why (e.g., AI and ethics),
+ * (2) **How** to implement AI and machine learning algorithms to support these desired properties,
+ * (3) **How** to **design and evaluate the interface / interaction between** humans and AI in order to "**actually**" achieve these desired properties. 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+#### How to Study Human-AI Interaction with
+### User-Centered Design
+<img src='.\images\lec10Slide11-4.png' 
+ style = '
+   border:0;
+   box-shadow:none;
+   width:100%;
+   height:auto;
+' >
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+#### Beyond UCD life cycle for Human-AI Interaction
+<img src='.\images\s10-2.png' 
+ style = '
+   border:0;
+   box-shadow:none;
+   width:100%;
+   height:auto;
+' >
+
+User-Centered Design (UCD) Life-Cycle
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+<section>
+<section data-markdown> 
+<textarea data-template>
+## Discover
+  * To create Human-AI Interaction systems
+  * **First Step: know the audience (user)**
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+###  Ways of Knowing the User
+
+<img src='.\images\lec10Slide14-2.png' 
+ style = '
+   border:0;
+   width:30%;
+   height:auto;
+' >
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+<section data-markdown> 
+<textarea data-template>
+###  Ways of **Knowing** the User
+
+  * Knowing by **asking**
+    * Interview, surveys
+  * Knowing by **experimenting**
+    * Lab experiment, statistical analysis
+  * Knowing by **designing and building**
+    * Ideation, Wizard-of-Oz prototyping
+  * Knowing by **deploying**
+    * Field study, dairy studies, log data analysis
+  * Knowing by **sensing**
+    * Remote user monitoring
+  * Knowing by **observing**
+    * Case studies
+
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+</section>
+ 
+
+<section>
+<section data-markdown> 
+<textarea data-template>
+##### Design & Deliver
+### Human-AI Interaction systems **are**
+  
+1. Designed to **adapt** the interaction to user capabilities
+2. Designed iteratively and in **collaboration with users**
+3. Designed carefully by considering which tasks to automate and which to keep under **human supervision** 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+##### Design & Deliver
+### Human-AI Interaction systems are an **on-going research area**
+  
+  * The delivery of these systems needs a lot of testing and feedback
+ 
+  * Therefore, it is also **important to understand guidelines** for designing and delivering Human-AI interaction Systems 
+  
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+</section>
+
+
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Guidelines  
+  * Guidelines and principles for designing user interfaces are studied in Interaction Design.
+ 
+ ---
+ 
+### **However!!!**
+  
+  * Due to the variability of AI designs (capabilities and interaction styles),
+  * and high-reports of failures (autocomplete errors)
+  
+  * There is need to study guidelines for designing Human-AI interactions.
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+<section>
+<section data-markdown> 
+<textarea data-template>
+## Guidelines (Gs) 
+### G1-G18 
+
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+
+ 
+<section data-markdown> 
+<textarea data-template>
+## (G1) Make it clear what the system can do
+ * Help the user understand what the AI system is **capable of** doing
+ 
+Example applications
+ * [Activity Trackers] "Displays all the metrics that it tracks and explains how.  Metrics include movement metrics such as steps, distance travelled, length of  time exercised, and all-day calorie burn, for a day." 
+
+Example violation
+ * [Social Networks] "This guideline is violated because I cannot even tell what this news feed can/will show."
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G2 - Make clear how well the system can do what it can do
+ * Help the user understand **how often** the AI system may make **mistakes**
+ 
+Example application 
+ * [Music Recommenders] "A little bit of hedging language: 'we think you'll like'." 
+ 
+Example Violation
+ * [Social Networks] "For some of the ads, there is a 'suggested post' on the top to indicate that this is just a suggestion. But for the rest of the posts, there is no clue for me to tell the quality. 
+ 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+
+## G3 - Time services based on context
+ 
+Time when to **act or interrupt** based on the user's current task and  environment. 
+ 
+Example application 
+ * [Social Networks] "If the user has not accessed [the product] in a while, the application will let the user know that there is something new to be explored - a story, video. 
+
+Example violations
+ * [Email] "Sending notifications for unimportant messages likely something most people will not want as an interruption." 
+ 
+
+ 
+<aside class='notes'>
+ Voice Assistants "There is no indication of when [the assistant] will actually remind you of the set reminder. She just confirms that the reminder has been set  (mind you this I regardless if you have this Reminders app downloaded or not)." 
+
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G4 - Show contextually relevant information
+ 
+* **Display information** relevant to the user's current task and environment. 
+
+Example applications 
+* [Web Search] "Searching a movie title returns show times in near my location for today's date" 
+
+Example Violation
+* [Email] "What goes into the [tabs] is the same all the time. It does not change based on the context, for example to...emails related to the meeting I'm attending or the message I'm reading." 
+ 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G5 - Match relevant social norms 
+* Ensure the **experience** is delivered in a way that users would **expect**, given their social and cultural context. 
+
+Example application
+* [Voice Assistants] "[The assistant] uses a semi- formal voice to talk to you - spells out "okay" and asks further questions." 
+
+Example Violation
+* [Email] "the system does not follow the social norms of a workplace. For example, one norm is to pay attention to your manager. However, even with access to company hierarchies, it isn't clear that the system will put messages from one's direct manager in the [appropriate tab] automatically." 
+ 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G6 - Mitigate social biases 
+* Ensure the AI system's **language and behaviors** do not rein- force undesirable and unfair stereotypes and **biases** 
+ 
+Example Application 
+* [Autocomplete] "The autocomplete feature clearly suggests both genders [him, her] without any bias while suggesting the text to complete." 
+ 
+Example violation 
+* [Voice Assistants] "When asked "...can you change your voice" [the assistant] responds in a male voice saying "Here is an example of my other voice. Would you like me to use this one?"... While it's nice that a male voice is given as an option, the default...voice is female, which reinforces stereotypical gender roles that presume a secretary or receptionist is female." 
+ 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G7 - Support efficient invocation
+* Make it **easy to invoke** or request the AI system's services when **needed**
+  
+Example Application 
+* [Voice Assistants] "I can say [wake command] to initiate." 
+ 
+Example violation: 
+* [Navigation] "[The product] remembers where you parked your car. However if it fails to remember, or I want it to remember something else (e.g., where I chained up my bike), it is not possible (or at least not easily discoverable) to  invoke the capability when I need it." 
+
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G8 - Support efficient dismissal
+* Make it **easy to dismiss** or ignore undesired AI system services. 
+ 
+Example Application 
+* [E-commerce] "Feature is unobtrusive, below the fold, and easy to scroll past...Easy to ignore." 
+
+Example Violation
+* [Navigation] "Suggested locations based on calendar entries can't be removed from the suggestions." 
+
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G9 - Support efficient correction
+* Make it **easy to edit, refine, or recover** when the AI system is wrong. 
+ 
+Example Application
+* [Voice Assistants] "Once my request for a reminder was processed, I saw the ability to edit my reminder in the UI that was displayed. Small text underneath stated 'Tap to Edit' with a chevron indicating something would happen if I selected this text." 
+
+Example Violation
+* [E-commerce] "I already recently bought the items which are in my recommendation list & there is no message to discontinue nor option for users to deselect." 
+ 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G10 - Scope services when in doubt
+* Engage in disambiguation or gracefully **degrade the AI system's services when uncertain** about a user's goals 
+ 
+Example applications
+* [Navigation] "If more than one line takes the same route the user can choose between the preferred line." 
+ 
+Example violations 
+* [Music Recommenders] "The system doesn't ask for user input about its recommendations, nor does it provide a way for users to provide input." 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G11 - Make clear why the system did what it did
+* Enable the user to access an **explanation** of why the AI system behaved as it did
+ 
+Example applications
+* E-commerce] "Clicking "Why recommended" explains why they have recommended that particular item to you."
+ 
+Example violations
+* [Music Recommenders] "The system provides no information about why the recommended songs/artists are chosen."  
+
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G12 - Remember recent interactions
+* Maintain **short term memory** and allow the user to make efficient references to that memory
+ 
+Example applications
+* [Navigation] "Opening the app shows a list of recent destinations, as well as allows you to access "favorite" locations." 
+ 
+Example violations
+* [Social Networks] "This guideline is violated since there is no indication of "what you have read" 
+ 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G13 - Learn from user behavior
+* **Personalize** the user's experience by learning from their **actions over time**
+ 
+Example applications
+* [Music Recommenders] "I think this is applied because every action to add a song to the list triggers new recommendations." \
+ 
+Example violations
+* [Activity Trackers] "The app notifies/nudges users to push them to achieve goals, but I haven't seen a change in behavior even though my patterns have changed." 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G14 - Update and adapt cautiously 
+* **Limit disruptive changes** when updating and **adapting** the AI system's behaviors
+ 
+Example applications
+* [Music Recommenders] "Once we select a song they update the immediate song list below but keeps the above one constant." 
+ 
+Example violation
+* [Social Networks] "If I'm in the middle of watching a video post, every now and then they will scroll me up to the first post." 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G15 - Encourage granular feedback
+* Enable the **user to provide feedback** indicating their preferences during regular interaction with the AI system 
+ 
+Example application
+* [Social Networks] "[The product] allows the user to "Hide an Ad," and then when doing so, solicits feedback to improve relevancy of future ads." 
+ 
+Example violations
+* [Voice Assistants] "Once [the assistant] performed the task I had asked of it, there was no additional ability to customize the experience or give feedback on my satisfaction; even when I chose to remove the reminder right after I verbally requested it." 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G16 - Convey the consequences of user actions
+* Immediately update or convey **how** user actions will **impact future behaviors** of the AI system. 
+ 
+Example applications
+* [MusicRecommenders] "Tapping thelike/dislike button results in immediate popups informing that the user will receive more/fewer recommendations like it." 
+  
+Example violations
+* [Social Networks] "You can unfollow or like or interact but how that affects you isn't clear. It just sort a happens." 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G17 - Provide global controls
+* Allow the **user** to globally **customize** what the AI system monitors and how it behaves
+ 
+Example applications
+* [Web Search] "It has settings such as...private results that help users get results that are more relevant to them." 
+ 
+Example violations
+* [Email] "The only option is to turn the system on or off. It otherwise applies to all messages at all times. It is not clear how the system works, or what data it monitors, but presumably it applies to entire email contents." 
+  
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## G18 - Notify users about changes
+* **Inform** the **user** when the AI system **adds or updates its capabilities** 
+ 
+Example applications
+* [Email] "The help tab for the interface features a "What's new" section which could be used to inform the user about AI system additions or capability updates." 
+  
+Example violations
+[Music Recommenders] "The algorithm feels like it constantly updates, with a slightly different feel to my recommendations every week. However there is no explanation of what has changed." 
+ 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+</section>
+ 
+ 
+ 
+
+ 
+				
+<!--
+*****************
+--->
+				
+				
+				
+
+<section data-markdown style="text-align: left;">
+	<textarea data-template>
+	## Summary
+	* Understand Core Concepts (Human AI Interaction) 
+	* Guidelines and principles 
+	* Examples, limitations and challenges
+	</textarea>
+</section>
+
+<section data-markdown> 
+<textarea data-template>
+## Recommended Reading 
+<img src='.\images\lec10Slide36-4.png' 
+ style = '
+   border:0;
+   width:25%;
+   height:auto;
+' >
+  
+  * Interaction Design: beyond Human-Computer Interaction Chapter 1 <br>
+ 
+  * Guidelines for Human-AI Interaction [Link](https://www.microsoft.com/en-us/research/uploads/prod/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf)
+
+<aside class='notes'>
+</aside>
+ 
+</textarea>
+</section>
+
+
+<section data-markdown style="text-align: left;">
+	<textarea data-template>
+	## To do this week ...
+
+	* Read over the lectures/recommended chapters
+	* **Review** the revision questions 
+	* Read around the subject
+	* Revising for the Exam
+
+	</textarea>
+</section>
+				
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				slideNumber: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/tts/tts_min_reveal.js', async: false}
+				]});
+				
+				
+			Reveal.configure({
+			  keyboard: {
+				81: function() {tts.Synth.cancel()}, // press q to cancel speaking and clear speech queue.
+				  84: function() {tts.ToggleSpeech()}  // press t to toggle speech on/off
+
+			  }
+			});
+
+function togglesound()
+{
+	tts.ToggleSpeech();	
+}
+
+		</script>
+		
+		
+<!--
+Add some helper buttons to the bottom left 
+* home (back to the main page)
+* print button (puts the slides in a printable format)
+-->
+	
+<div style="display: block; position: absolute; bottom: 5px; left: 5px; margin-left: 0px; z-index: 20;">
+	<a href="https://f27id.github.io"><img src="./images/webhome.png" width="8%"></a>
+</div>
+
+<div style="display: block; position: absolute; bottom: 3px; left: 50px; margin-left: 0px; z-index: 20; text-align: left;">
+	<a href="?print-pdf" onclick="window.open(this.href, 'print window', 'width=1000,height=550').print(); return false"><img src="./images/webprint.png" width="7.5%"></a>
+</div>
+
+<!--
+<div style="display: block; position: absolute; bottom: 3px; left: 95px; margin-left: 0px; z-index: 20; text-align: left;">
+	<a onclick="togglesound();"><img src="./images/webtalk.png" width="7.5%"></a>
+</div>
+-->
+	
+	
+
+</body>
+</html>

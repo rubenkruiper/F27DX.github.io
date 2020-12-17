@@ -1,0 +1,1613 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to Interaction Design: Lecture - Revision</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+		<meta name="description" content="Creating beautiful interactive and engaging interfaces">
+		<meta name="author" content="Ben Kenwright">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/reveal.css">
+		<link rel="stylesheet" href="./css/theme/white.css" id="theme">
+		
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="./lib/css/monokai.css">
+		
+		<link rel="stylesheet" href="./css/reveal-override.css"/>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+							
+		<div class="reveal">
+		
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+		
+<section>
+<h2>Revision</h2>
+<h4>F27ID Introduction to Interactive Design</h4>
+<p>
+	<small>2020-2021</small>
+</p>
+</section>
+
+<section data-markdown style="text-align: left;">
+<textarea data-template>
+	## Overview
+
+	* Revision Material
+	  * Interaction Design Principles
+	  * Usability and User Experience
+	  * Problem Spaces and Conceptual Models
+	    * Metaphors
+	  * Users and User Requirements
+	  * Prototyping and Evaluation 
+	* Questions and Discussion
+	
+</textarea>
+</section>
+				
+				
+
+<!--
+*****************
+--->
+
+
+ 
+ 
+<section>
+<section data-markdown> 
+<textarea data-template>
+## How to design? 
+  * Depends on the **Problem Space**
+    * Who are the people interacting with the device?
+    * What activities are they carrying out?
+    * Where is the interaction taking place? 
+
+ 
+<aside class='notes'>
+What are they good/bad at?
+What might help?
+Get people involved in the process
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Usability vs User Experience
+  
+<img src='.\images\lec11Slide4-3.png' 
+ style = '
+   border:0;
+   text-align: center;
+   width:60%;
+   height:auto;
+' >
+ 
+<aside class='notes'>
+ 
+Usability versus User Experience
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Usability 
+  
+* Effectiveness
+* Efficiency
+* Learnability
+* Error prevention
+* Memorability
+
+ 
+<aside class='notes'>
+ 
+Usability - ensuring that products are easy to use learn, effective to use from the users' perspective
+
+
+</aside>
+ 
+</textarea>
+</section>
+
+
+<section data-markdown> 
+<textarea data-template>
+## User Experience 
+  
+* Satisfaction
+* Enjoyment
+* Pleasure
+* Fun
+* Value
+
+ 
+<aside class='notes'>
+User experience design (UX)- how a product behaves and is used by people in the real world; and how people feel about interacting with it in any way e.g. using it, opening it, looking at
+
+Usability and User Experience - HCI emphasises Usability but the importance of User Experience is becoming recognised too and is part of Interaction Design. 
+</aside>
+ 
+</textarea>
+</section>
+
+
+
+
+
+
+ 
+<section data-markdown> 
+<textarea data-template>
+### Usability Definition 
+Usability factors:
+ * **Effectiveness** - how well does the product to what it is supposed to do / help the user do what they are supposed to do?
+ * **Efficiency** - does it require minimal effort from the user or are there many extra / complex steps to a task?
+ * **Error prevention** - does it protect users from their own mistakes?
+ * **Safety** - does it protect the user, e.g allow remote use in a dangerous situation; 
+ * **Utility** - does it provide the right functionality and tools so users can do what they want and need to do?
+ * **Learnability** - how easy is it to learn how to use it?
+ * **Memorability** 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+###### How to achieve Usability goals? 
+Some widely agreed design principles for usability
+  * **Affordance** - objects should have attributes that allow people to know how to use them 
+  * **Feedback** - people should know what they did
+  * **Visibility** - the more visible the controls are, the easier to use 
+  * **Constraints** - only offer those functions that are useful in context 
+  * **Consistency** - does the same thing in the same way, same images mean the same thing
+  * **Non-Destructive Operations** - importance of undo
+  * **Scalability** - operations should work on all screen sizes, small and large
+  * **Reliability** - operations should work, always 
+
+ 
+<aside class='notes'>
+ Affordance: to give a clue. Button invites pushing, real and virtual affordances.
+Feedback: imagine writing without seeing the ink
+Visibility: the more visible the more likely they know what to do next. Phone mailbox. Alexa.
+Constraints: Guide the user to what they are allowed to do
+Consistency: Ctrl+A. Ctrl+Shift+S does not work in all programmes on the Mac.
+
+Trying to achieve one might destroy the other, constraint vs visibiltiy. Knife example for consistency to show that it works without as well.
+
+These Usability principles are very general and can be applied to the design of most interactive systems and devices. But even so, they are not absolute and they involve trade-offs. For certain applications, devices or designs there may be a higher priority for some of these principles than others. For example the scalability design principle wont apply to a system that will only ever be used on a single kind of screen.
+
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## User Experience Threads 
+ * **Sensual Thread**: Sensory engagement and level of absorption
+ * **Emotional Thread**: How do you feel about the product?
+ * **Compositional Thread**: The narrative of the experience
+ * **Spatio-temporal Thread**: Space and time of the experience and the influence on it 
+  
+ 
+<aside class='notes'>
+ McCarthy and Write propose four threads that make up our holistic experience.
+Sensual thread: absorbed by games, phones, and chatrooms
+Emotional thread: judgment of product, buy the cool phone. Get angry because the PC doesn't work.
+Compositional thread: What is this about? Where am I? What has happened? What is going to happen? What would happen if .?
+Spatio-temporal thread: time speeding up or standing still. Need my own space, personal or public space.
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+### User Experience Goals  
+  * Aim for experiences which are
+    * Satisfying, aesthetically pleasing, enjoyable, engaging, pleasurable, exciting, supportive of creativity, entertaining, helpful, motivating, challenging, surprising.
+  * Avoid 
+     * Boring, frustrating, making one feel guilty, annoying, childish, unpleasant, patronising, making one feel stupid, gimmicky..
+  * Levels of response to a product (Norman)
+    * Visceral - how it feels physically or emotionally 
+    * Behavioural - functional, what can we do with it
+    * Reflective - e.g. does it reflect our personal or cultural values 
+  
+<aside class='notes'>
+ Everything has UX, ketchup, newspaper, etc. all aspects of the users interaction with product and company.
+Cannot design UX but only for UX. Phone case example.
+Cultural values, US date, different images for IKEA chatbot
+
+User Experience goals are mostly subjective qualities, how people feel about the product. It is harder to measure and quantify whether a design meets its User Experience goals (methods will be covered elsewhere in the course and in Experimental Design ) User Experience design goals may be positive or negative - a design should aim for the positive ones and avoid the negative 
+
+</aside>
+ 
+</textarea>
+</section>
+</section>
+
+
+ 
+<section> 
+
+<section data-markdown> 
+<textarea data-template>
+### Users and User Requirements 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+
+
+<section data-markdown> 
+<textarea data-template>
+### Users and User Requirements 
+ * Understanding users: **Cognitive Processes**
+   * Design to support different **types** of cognitive processes
+     * Attention, Perception and Recognition
+     * Learning and Memory - recall and filtering
+     * Language processing - reading, speaking and listening
+     * Problem-solving, planning, reasoning, and decision making
+ * **Mental models**
+   * Predict how the system will work and explain why
+   * Images and analogies / metaphors
+   * May be misleading 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Mental v. Conceptual models 
+  * **Conceptual models** (e.g. the desktop) help users learn/recall how to operate a system - can assist understanding of what it can do
+  * **Mental models** describes how the user understands how the underlying system actually works and what it can do 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+### Users and User Requirements
+ * Why focus on user requirements?
+ * Types of requirements
+   * Functional, non-functional, data, environment
+   * User characteristics
+ * Gathering requirements
+   * Interviews, questionnaires, documentation, ethnography, task analysis, observation
+ * Representing and sharing requirements
+   * Personas, user profiles, scenarios, use cases 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Functional vs Non-functional 
+   
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+<section data-markdown> 
+<textarea data-template>
+## **Functional** Requirements (F)
+  * Services/function provided
+    * 'What' NOT 'How'
+    * e.g. "The user must be able to stop the robot"
+    * "The robot must be able to climb stairs"
+    * "The form field must take a date"
+
+   
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+
+
+<section data-markdown> 
+<textarea data-template>
+## **Non-Functional** Requirements (NF)
+  * Constraints such as running on certain platforms, conforming to standards...
+  * Attributes such as appearance, usability
+    * 'Quality Attributes'
+    * e.g. "the system must be scalable"
+    * "the system must run on all platforms"
+   
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+</section>
+
+
+
+<section>
+
+
+<section data-markdown> 
+<textarea data-template>
+## Prototyping
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## What is a prototype? 
+  * In interaction design, a **prototype is a limited representation of the design** for a device you are trying to build, that allows users to interact with the device and explore the suitability of the design 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Which **aspects** to prototype? 
+
+* Prototype the **parts** that most need to be tried out
+  * Novel and innovative elements
+  * Technical issues
+  * Work flow, task design
+  * Screen layouts and information display
+  * Difficult, controversial, critical areas 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## **Low fidelity** prototypes 
+* Uses a medium which is unlike the final medium, e.g. paper, cardboard
+* Is quick, cheap, and easily changed
+* Examples:
+  * Sketches of screens, task sequences
+  * Cards or 'Post-it' notes
+  * Storyboards
+  * 'Wizard-of-Oz'
+  * Phone on a watchstrap (early smartwatch prototype) 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Low-fidelity prototypes 
+* Cheap to build
+* Easy to evaluate multiple concepts
+* Identify market requirements
+* Good for proof-of-concept and communication
+* **But:**
+  * No error checking
+  * Limited as a specification
+  * Not much use after requirements are established
+  * Limited navigation and flow
+  * Look-and-feel different from the end product 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## **High-fidelity** prototypes 
+ * Complete functionality (for at least part of the system)
+ * Fully interactive
+ * User driven
+ * Clear navigation, final look-and-feel 
+ * Useful for testing and exploring
+ * Part of specification for final product
+ * Marketing and sales
+ * **But**
+   * Expensive and time consuming to build
+   * Inefficient for proof-of-concept
+   * Less effective for requirements 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## **Compromises** in prototypes 
+* We **can't prototype everything** about an interface
+* All prototypes involve compromises
+* For software-based prototyping maybe there is a slow response? Sketchy icons? Limited functionality? 
+* Two common types of compromise
+* **'horizontal'**: Provide a wide range of functions, but with little detail
+* **'vertical'**: Provide a lot of detail for only a few functions
+* The compromises in our prototypes mustn't be ignored or forgotten. The prototype isn't the full product which will still need engineering. 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+
+</section> 
+
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## **Evaluation**: Method Selection 
+The evaluation approach influences the methods used, and in turn, how data is collected, analyzed and presented.
+* E.g., field studies typically:
+  * Involve observation and interviews.
+  * Do not involve controlled tests in a laboratory.
+  * Produce qualitative data.
+* E.g., Usability testing typically:
+  * Involves users, interviews, design, questionnaires.
+  * Conducted in the laboratory or in a natural setting.
+  * Primary goal is to test how usable the interface is with intended populations. 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+<!--
+<section data-markdown> 
+<textarea data-template>
+## Thematic Coding Example 
+<img src='.\images\lec11Slide20-2.png' 
+ style = '
+   border:0;
+   width:100%;
+   height:auto;
+' >
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+-->
+ 
+
+<section data-markdown> 
+<textarea data-template>
+## Revision Questions
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+
+
+<section>	
+<!-- --------------------------------------------------- -->				
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						What is a conceptual model in interaction design? (you can pick more than one)
+						
+						* a) A description of the user interface
+						* b) An abstraction outlining what people can do with a product
+						* c) How a user understands the system works
+						* d) The concepts needed to interact with a product
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* b) An abstraction outlining what people can do with a product
+						* d) The concepts needed to interact with a product
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						What is part of the conceptual model of the desktop? (You can pick more than one)
+
+						
+						* a) Files and folders
+						* b) Folders containing files
+						* c) The size and shape of files and folders
+						* d) Moving a file from one folder into another
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						Answer is 'all' of them
+						* a) Files and folders
+						* b) Folders containing files
+						* c) The size and shape of files and folders
+						* d) Moving a file from one folder into another
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						Which statements about User Experience (UX) are true? (You can pick more than one)
+
+
+						
+						* a) UX is easily quantifiable
+						* b) UX is highly subjective
+						* c) UX is more important than Usability
+						* d) UX and Usability are completely independent
+						* e) For some products UX is irrelevant
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* b) UX is highly subjective
+						* e) For some products UX is irrelevant
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						Which of these prototypes would be classed as low-fidelity? (You can pick more than one)
+
+						* a) A play-doh model of a physical interface
+						* b) A wooden block in the shape of the product
+						* c) A story board/sketches
+						* e) A Wizard of Oz design
+						* f) An app providing the final look and feel of the final product
+						* g) A smart watch made out of a screen strapped to the wrist connected to an external PC
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* a) A play-doh model of a physical interface
+						* b) A wooden block in the shape of the product
+						* c) A story board/sketches
+						* e) A Wizard of Oz design
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						Which statements about low-fidelity prototypes are true? (You can pick more than one)
+
+						* a) Complete functionality for (part) of the product
+						* b) Cheap to build
+						* c) Final look and feel
+						* d) Proof-of-concept
+						* e) Identify market requirements
+						* g) Useful for testing
+
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* b) Cheap to build
+						* d) Proof-of-concept
+						* e) Identify market requirements
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						Which of these are functional requirements of an app that shares pictures with your friends (You can pick more than one)
+
+						* a) The user should be able to create a social network to share images with
+						* b) Images should be clear
+						* c) The app should load images quickly
+						* d) The user should be able to alter the image to make it more appealing
+						* e) The app should save images on a remote server
+						* f) The app to work in different lighting conditions
+
+
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* a) The user should be able to create a social network to share images with
+						* d) The user should be able to alter the image to make it more appealing
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						Imagine you would like to test how customers feel about a specific functionality of your app. What kind of prototype would you choose?
+
+						* a) Low-fidelity, vertical
+						* b) Low-fidelity, horizontal
+						* c) High-fidelity, vertical
+						* e) High-fidelity, horizontal
+
+
+
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* c) High-fidelity, vertical
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						After building your prototype, which kind of evaluation technique would you use to get feedback on the look and feel of your product? (You can pick more than one)
+
+						* a) Interviews
+						* b) Focus groups
+						* c) Direct observation
+						* d) Indirect observation
+						* e) Researching similar products
+						* f) Questionnaires
+						* g) Reading documentation
+
+
+
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* a) Interviews
+						* b) Focus groups
+						* f) Questionnaires
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						Which of the following is a metaphor? (You can pick more than one)
+
+						* a) A paper ledger used to store numbers and calculations
+						* b) Editable cells, columns, and rows
+						* c) The desktop
+						* d) Movable files, folders, and icons
+						* e) A paper card to hold information
+
+
+
+
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* a) A paper ledger used to store numbers and calculations
+						* c) The desktop
+						* e) A paper card to hold information
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						“… scientists wanted to see if playing Mozart to babies in the womb increased their IQ.”
+						**What is the independent variable?**
+
+
+						* a) The baby’s age
+						* b) The baby’s IQ score
+						* c) Playing music in womb
+						* e) The mother’s IQ score
+
+
+
+
+
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#3553bc" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* c) Playing music in womb
+
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+
+<!-- --------------------------------------------------- -->
+
+				<section>
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Revision Question
+						“… scientists wanted to see if playing Mozart to babies in the womb increased their IQ.”
+						**What is the dependent variable?**
+
+
+						* a) The baby’s age
+						* b) The baby’s IQ score
+						* c) Playing music in womb
+						* e) The mother’s IQ score
+
+
+
+
+
+
+
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+					
+					<section data-markdown data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<textarea data-template>
+						## Answer
+						
+						* b) The baby’s IQ score
+
+						
+<aside class='notes'>
+</aside>
+						</textarea>
+					</section>
+				</section>
+		
+<!-- --------------------------------------------------- -->
+
+
+
+
+
+
+<!--
+<section data-markdown> 
+<textarea data-template>
+# How should I rehearse? 
+  * Lecture notes - on Vision, and your own notes
+  * Textbook chapters for ID (Pointers from slides) 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+-->
+ 
+ 
+ 
+ 
+<!--
+
+<section data-markdown> 
+<textarea data-template>
+# Interaction Design (Quiz) 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Conceptual Models  
+What is a conceptual model in interaction design?  (you can pick more than one)
+
+* A description of the user interface
+* An abstraction outlining what people can do with a product
+* How a user understands the system works
+* The concepts needed to interact with a product 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Conceptual Models 
+What is a conceptual model in interaction design?
+
+* A description of the user interface
+* An abstraction outlining what people can do with a product
+* How a user understands the system works
+* The concepts needed to interact with a product 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Conceptual Models 
+What is part of the conceptual model of the desktop? (You can pick more than one)
+
+* Files and folders
+* Folders containing files
+* The size and shape of files and folders
+* Moving a file from one folder into another 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Conceptual Models 
+What is part of the conceptual model of the desktop?
+
+* Files and folders
+* Folders containing files
+* The size and shape of files and folders
+* Moving a file from one folder into another 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## User Experience 
+Which statements about User Experience (UX) are true? (You can pick more than one)
+
+* UX is easily quantifiable
+* UX is highly subjective
+* UX is more important than Usability
+* UX and Usability are completely independent
+* For some products UX is irrelevant 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## User Experience 
+Which statements about User Experience (UX) are true?
+
+ * UX is easily quantifiable
+ * UX is highly subjective
+ * In general, UX is more important than Usability
+ * UX and Usability are completely independent
+ * For some products UX is irrelevant 
+
+ 
+<aside class='notes'>
+ Usability is broad- user experience is narrow
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Prototypes 
+Which of these prototypes would be classed as low-fidelity? (You can pick more than one)
+
+* A play-doh model of a physical interface
+* A wooden block in the shape of the product
+* A story board/sketches
+* A Wizard of Oz design
+* An app providing the final look and feel of the final product
+* A smart watch made out of a screen strapped to the wrist connected to an external PC. 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Prototypes 
+# Which of these prototypes would be classed as low-fidelity?
+
+* A play-doh model of a physical interface
+* A wooden block in the shape of the product
+* A story board/sketches
+* A smart watch made out of a screen strapped to the wrist connected to an external PC.
+* A Wizard of Oz design
+* An app providing the final look and feel of the final product 
+
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Prototypes 
+Which statements about low-fidelity prototypes are true?
+
+* Complete functionality for (part) of the product
+* Cheap to build
+* Final look and feel
+* Proof-of-concept
+* Identify market requirements
+* Useful for testing 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Prototypes 
+Which statements about low-fidelity prototypes are true? (you can pick more than one)
+
+ * Complete functionality for (part) of the product
+ * Cheap to build
+ * Final look and feel
+ * Proof-of-concept
+ * Identify market requirements
+ * Useful for testing 
+  
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Requirements 
+Which of these are functional requirements of an app that shares pictures with your friends
+
+* The user should be able to create a social network to share images with
+* Images should be clear
+* The app should load images quickly
+* The user should be able to alter the image to make it more appealing
+* The app should save images on a remote server
+* The app to work in different lighting conditions 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Requirements 
+Which of these are functional requirements of an app that shares pictures with your friends
+
+* The user should be able to create a social network to share images with
+* Images should be clear
+* The app should load images quickly
+* The user should be able to alter the image to make it more appealing
+* The app should save images on a remote server
+* The the app to work in different lighting conditions 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Prototypes 
+Imagine you would like to test how customers feel about a specific functionality of your app. What kind of prototype would you choose?
+
+* Low-fidelity, vertical
+* Low-fidelity, horizontal
+* High-fidelity, vertical
+* High-fidelity, horizontal 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Prototypes 
+Imagine you would like to test how customers feel about a specific functionality of your app. What kind of prototype would you choose?
+
+* Low-fidelity, vertical
+* Low-fidelity, horizontal
+* High-fidelity, vertical
+* High-fidelity, horizontal 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Evaluation 
+After building your prototype, which kind of evaluation technique would you use to get feedback on the look and feel of your product?
+
+* Interviews
+* Focus groups
+* Direct observation
+* Indirect observation
+* Researching similar products
+* Questionnaires
+* Reading documentation 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Evaluation 
+After building your prototype, which kind of evaluation technique would you use to get feedback on the look and feel of your product?
+
+* Interviews
+* Focus groups
+* Direct observation
+* Indirect observation
+* Researching similar products
+* Questionnaires
+* Reading documentation 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+# Interface Metaphors 
+Which of the following is a metaphor?
+
+* A paper ledger used to store numbers and calculations
+* Editable cells, columns, and rows
+* The desktop
+* Movable files, folders, and icons
+* A paper card to hold information 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+# Interface Metaphors 
+Which of the following is a metaphor?
+
+* A paper ledger used to store numbers and calculations
+* Editable cells, columns, and rows
+* The desktop
+* Movable files, folders, and icons
+* A paper card to hold information 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+# Experimental Scenario 
+
+Some scientists wanted to see if playing Mozart to babies in the womb increased their IQ. Design an experiment to test this. Think how you would run the experiment. 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Variables
+". scientists wanted to see if playing Mozart to babies in the womb increased their IQ."
+
+What is the independent variable?
+
+* The baby's age
+* The baby's IQ score
+* Playing music in womb
+* The mother's IQ score 
+  
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Variables
+". scientists wanted to see if playing Mozart to babies in the womb increased their IQ."
+
+What is the independent variable?
+
+* The baby's age
+* The baby's IQ score
+* Playing music in womb
+* The mother's IQ score 
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+ 
+ 
+ 
+<section data-markdown> 
+<textarea data-template>
+## Variables
+". scientists wanted to see if playing Mozart to babies in the womb increased their IQ."
+
+What is the dependent variable?
+
+* The baby's age
+* The baby's IQ score
+* Playing music in womb
+* The mother's IQ score 
+
+ 
+<aside class='notes'>
+ 
+</aside>
+ 
+</textarea>
+</section>
+ 
+-->
+ 
+ 
+				
+<!--
+*****************
+--->
+				
+				
+				
+
+				<section data-markdown style="text-align: left;">
+					<textarea data-template>
+					## Summary
+					
+					* Review of the material
+					* Help with exam picture/summary of subject
+					</textarea>
+				</section>
+
+
+				<section data-markdown style="text-align: left;">
+					<textarea data-template>
+					## To do this week ...
+
+					* Review lectures/slides 
+					* Textbook chapters
+					* **Practice** the revision questions 
+					* Good luck!
+					
+					</textarea>
+				</section>
+				
+
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				slideNumber: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/tts/tts_min_reveal.js', async: false}
+				]});
+				
+				
+			Reveal.configure({
+			  keyboard: {
+				81: function() {tts.Synth.cancel()}, // press q to cancel speaking and clear speech queue.
+				  84: function() {tts.ToggleSpeech()}  // press t to toggle speech on/off
+
+			  }
+			});
+
+function togglesound()
+{
+	tts.ToggleSpeech();	
+}
+
+		</script>
+		
+		
+<!--
+Add some helper buttons to the bottom left 
+* home (back to the main page)
+* print button (puts the slides in a printable format)
+-->
+	
+<div style="display: block; position: absolute; bottom: 5px; left: 5px; margin-left: 0px; z-index: 20;">
+	<a href="https://f27id.github.io"><img src="./images/webhome.png" width="8%"></a>
+</div>
+
+<div style="display: block; position: absolute; bottom: 3px; left: 50px; margin-left: 0px; z-index: 20; text-align: left;">
+	<a href="?print-pdf" onclick="window.open(this.href, 'print window', 'width=1000,height=550').print(); return false"><img src="./images/webprint.png" width="7.5%"></a>
+</div>
+
+<!--
+<div style="display: block; position: absolute; bottom: 3px; left: 95px; margin-left: 0px; z-index: 20; text-align: left;">
+	<a onclick="togglesound();"><img src="./images/webtalk.png" width="7.5%"></a>
+</div>
+-->
+	
+	
+
+</body>
+</html>
